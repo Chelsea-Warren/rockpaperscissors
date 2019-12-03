@@ -27,21 +27,21 @@ $("document").ready(function(){
 console.log("Computer Choice",computerChoice);
 console.log("Users Choice", userChoice);
 
-if(userChoice === "rock" && computerChoice=== "Rock" ||
-    userChoice=== "paper" && computerChoice=== "Paper" ||
-    userChoice=== "scissors" && computerChoice=== "Scissor"){
+if(userChoice === "ROCK" && computerChoice=== "ROCK" ||
+    userChoice=== "PAPER" && computerChoice=== "PAPER" ||
+    userChoice=== "SCISSOR" && computerChoice=== "SCISSOR"){
        $("#result").html("Nobody Wins ");
     }
 
-else if (userChoice === "rock" && computerChoice=== "Scissor" ||
-    userChoice=== "paper" && computerChoice=== "Rock" ||
-    userChoice=== "scissors" && computerChoice=== "Paper"){
+else if (userChoice === "ROCK" && computerChoice=== "SCISSOR" ||
+    userChoice=== "PAPER" && computerChoice=== "ROCK" ||
+    userChoice=== "SCISSOR" && computerChoice=== "PAPER"){
        $("#result").html("You Win ");
     }
 
-    else if (userChoice === "rock" && computerChoice=== "Paper" ||
-    userChoice=== "paper" && computerChoice=== "Scissor" ||
-    userChoice=== "scissors" && computerChoice=== "Rock"){
+    else if (userChoice === "ROCK" && computerChoice=== "PAPER" ||
+    userChoice=== "PAPER" && computerChoice=== "SCISSOR" ||
+    userChoice=== "SCISSOR" && computerChoice=== "ROCK"){
        $("#result").html("Computer Win ");
     }
 
